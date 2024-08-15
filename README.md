@@ -29,21 +29,15 @@ This project has undergone a transformation and is now powered by React. Feel fr
 
 ## Installation
 
-1. Clone the repository:
 
-```bash
-git clone https://github.com/tyleroneil72/chat-bot.git
-cd chat-bot
-```
-
-2. Install dependencies:
+1. Install dependencies:
 
 ```bash
 cd backend
 npm install
 ```
 
-3. Obtain OpenAI API Key:
+2. Obtain OpenAI API Key:
 
 Sign up for an account at OpenAI.
 Get your API key from the OpenAI dashboard.
