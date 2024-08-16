@@ -27,14 +27,14 @@ async function callGPT(promptContent, systemContent, previousChat) {
     messages.push(assistantPrompt);
 
     const response = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
+      model: "gpt-4o-mini",
       //   model: "gpt-3.5-turbo",
       messages: messages,
     });
 
     console.log(1);
-    console.log(response.data.choices[0].message.content);
-    return response.data.choices[0].message.content;
+    console.log(response.choices[0].message.content);
+    return response.choices[0].message.content;
   } catch (error) {
     console.error("Error:", error);
     return `An error occurred while processing the request: ${error}`;
